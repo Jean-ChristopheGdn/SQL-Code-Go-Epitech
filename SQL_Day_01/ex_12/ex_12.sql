@@ -1,0 +1,1 @@
+select count(title) as 'Number of western movies', genres.name, producers.name from movies inner join genres on genres.id = movies.genre_id inner join producers on producers.id = movies.producer_id where genres.name like 'western' and (producers.name like 'tartan movies' or producers.name like 'lionsgate uk');
